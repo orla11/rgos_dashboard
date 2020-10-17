@@ -8,7 +8,9 @@
             <vs-row id="loading-search" class="vs-con-loading__container">
                   <vs-col v-for="(status,index) in statuses"
                         :key="index"
-                        vs-w="6">
+                        vs-w="6" 
+                        vs-sm="12"
+                        vs-xs="12">
                         <app-sensor-list :sensors="sensors" :status="status"></app-sensor-list>
                   </vs-col>
             </vs-row>

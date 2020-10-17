@@ -4,8 +4,15 @@
               <div class="p-8 login-tabs-container">
 
                 <div class="vx-card__title mb-4" v-if="!isLoggingIn">
-                  <h4 class="mb-4">Login</h4>
-                  <p>Please login to your account.</p>
+                  <div class="flex mb-4">
+                    <div class="w-3/4">
+                      <h4 class="mb-4">Login</h4>
+                      <p>Please login to your account.</p>
+                    </div>
+                    <div class="w-1/4">
+                      <img class="xl:invisible lg:invisible" src="@/assets/images/logo/rgos-full.png" alt="logo-login" style="width:100%">
+                    </div>
+                  </div>
                 </div>
 
                 <div class="mt-8" v-if="!isLoggingIn">
@@ -35,10 +42,10 @@
                       @keyup.enter.native="login" />
 
                   <div class="flex flex-wrap justify-between my-5">
-                    <span class="md:flex hidden items-center mt-2">
+                    <span class="md:flex items-center mt-3">
                         <span>Made with</span>
-                        <feather-icon icon="CoffeeIcon" svgClasses="stroke-current text-warning w-6 h-6" class="ml-2" />
-                        <span>&nbsp;by 0rla</span>
+                        <feather-icon icon="CoffeeIcon" svgClasses="stroke-current text-warning w-6 h-6" class="ml-2 mr-2" />
+                        <span>by 0rla</span>
                     </span>
                     <!-- <vs-checkbox v-model="checkbox_remember_me" class="mb-3" >Remember Me</vs-checkbox> -->
                     <vs-button class="float-right mt-2" @click="login" :disabled="username == '' || password == ''">Login</vs-button>
