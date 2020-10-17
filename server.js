@@ -5,6 +5,6 @@ const { app } = require('firebase')
 
 app = express()
 app.use(serverStatic(path.join(__dirname, 'dist')))
-const port = process.env.PORT || 80
+const port = process.env.PORT || 5000
 
 app.listen(port)
