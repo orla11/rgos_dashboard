@@ -52,8 +52,8 @@ require('./assets/css/iconfont.css');
 export const EventBus = new Vue();
 
 // Change this before building for production
-Vue.config.productionTip = false;
-Vue.config.devtools = true;
+Vue.config.productionTip = true;
+Vue.config.devtools = false;
 
 new Vue({
 	router,
