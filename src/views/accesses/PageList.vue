@@ -3,6 +3,7 @@
             <div class="search-page__search-bar flex items-center">
                   <vs-input icon-no-border placeholder="Search" v-model="searchQuery" class="w-full input-rounded-full" icon="icon-search" icon-pack="feather" />
                   <v-select id="style-select-bg" @input="filterByGroup" class="w-full ml-32" :reduce="group => group.id" v-model="selectedGroupFilter" :options="groups" placeholder="Filter Group"></v-select>
+                  <vs-button @click="openNewAccessPopup" class="ml-32" style="width: 50%" color="primary" type="border" icon-pack="feather" icon="icon-plus">Add New</vs-button>
                   <vs-pagination :total="pageCount" v-model="currentPage"></vs-pagination>
             </div>
             
@@ -53,6 +54,9 @@ export default {
             }
       },
       methods: {
+            openNewAccessPopup(){
+                  EventBus.$emit('NewAccessPopup')
+            },
             confirmDeleteAccess(access){
                   this.$vs.dialog({
                         type: 'confirm',

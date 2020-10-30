@@ -7,6 +7,19 @@ const state = {
 
 const mutations = {
       SET_ACCESSES: (state,payload) => { state.accesses = payload },
+      CREATE_ACCESS: (state, payload) => {
+            let access = {
+				_id: v4().toString(),
+				created_on: {
+					$date: new Date().getTime()
+				},
+				first_name: payload.first_name,
+				last_name: payload.last_name,
+				permissions: [],
+				group: ''
+                  }
+            state.accesses.push(access);
+      },
       UPDATE_ACCESS: (state,payload) => {
 
             let access = state.accesses.find(el => el._id == payload._id)
@@ -44,6 +57,7 @@ const mutations = {
 const actions = {
       initData: ({commit}) => { commit('SET_ACCESSES',accesses) },
       loadData: ({commit},data) => { commit('SET_ACCESSES',data) },
+      createAccess: ({commit},payload) => { commit('CREATE_ACCESS',payload)},
       updateAccess: ({commit},access) => { commit('UPDATE_ACCESS',access) },
       deleteAccess: ({commit},id) => { commit('DELETE_ACCESS',id) },
       setGroup: ({commit},{access_id,group_id}) => { commit('SET_GROUP',{access_id,group_id}) },

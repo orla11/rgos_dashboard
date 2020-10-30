@@ -53,7 +53,7 @@ export const EventBus = new Vue();
 
 // Change this before building for production
 Vue.config.productionTip = true;
-Vue.config.devtools = false;
+Vue.config.devtools = true;
 
 new Vue({
 	router,
