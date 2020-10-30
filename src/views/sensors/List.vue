@@ -28,7 +28,7 @@
 
             <vs-td class="whitespace-no-wrap">
                   <feather-icon title="Edit" icon="EditIcon" svgClasses="w-5 h-5 hover:text-primary stroke-current" @click.stop="editData(data[index])" style="cursor: pointer;"/>
-                  <feather-icon title="Delete" icon="TrashIcon" svgClasses="w-5 h-5 hover:text-danger stroke-current" class="ml-2" @click.stop="deleteData(data[index]._id)" style="cursor: pointer;"/>
+                  <feather-icon title="Forget" icon="ChevronsDown" svgClasses="w-5 h-5 hover:text-danger stroke-current" class="ml-2" @click.stop="deleteData(data[index]._id)" style="cursor: pointer;"/>
             </vs-td>
             <vs-td class="whitespace-no-wrap" v-if="data[index].status === 'pending'">
                   <feather-icon title="Adopt" icon="PlusCircleIcon" svgClasses="w-5 h-5 hover:text-warning stroke-current" class="ml-2" @click.stop="adopt(data[index])" style="cursor: pointer;"/>
