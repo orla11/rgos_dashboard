@@ -99,7 +99,9 @@ export default {
             switchIsEditing(){
                   this.isEditing = !this.isEditing
             },
-            checkIfEditing: () => this.isEditing,
+            checkIfEditing() {
+                  return this.isEditing
+            },
             checkIfCurrentNameIsDifferent(){
                   return this.first_name != this.access.first_name || this.last_name != this.access.last_name
             },

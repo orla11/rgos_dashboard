@@ -1,8 +1,10 @@
 <template>
       <vx-card>
-            <div slot="no-body">
+            <!-- <div slot="no-body">
                   <img src="../../assets/images/accesses/placeholder.png" alt="content-img" class="responsive card-img-top" style="height: 4%">
-            </div>
+            </div> -->
+
+            <vs-icon icon="perm_identity" size="medium"></vs-icon>
 
             <h5 class="mb-2">{{ access.first_name | title }}</h5>
             <h5 class="mb-2">{{ access.last_name  | title }}</h5>
