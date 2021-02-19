@@ -45,7 +45,7 @@
                     <span class="md:flex items-center mt-3">
                         <span>Made with</span>
                         <feather-icon icon="CoffeeIcon" svgClasses="stroke-current text-warning w-6 h-6" class="ml-2 mr-2" />
-                        <span>by 0rla</span>
+                        <span>by <a href="https://orla.dev" target="_blank">orla.dev</a></span>
                     </span>
                     <!-- <vs-checkbox v-model="checkbox_remember_me" class="mb-3" >Remember Me</vs-checkbox> -->
                     <vs-button class="float-right mt-2" @click="login" :disabled="username == '' || password == ''">Login</vs-button>
