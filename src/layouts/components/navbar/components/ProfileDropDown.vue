@@ -15,14 +15,16 @@
       <vs-dropdown-menu class="vx-navbar-dropdown">
         <ul style="min-width: 9rem">
 
-          <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
-            @click="saveData">
+          <!-- <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
+            @click="saveData"> -->
+            <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white">
             <feather-icon icon="SaveIcon" svgClasses="w-4 h-4" />
             <span class="ml-2">Save Data</span>
           </li>
 
-          <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
-            @click="loadData">
+          <!-- <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
+            @click="loadData"> -->
+            <li class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white">
             <feather-icon icon="DownloadCloudIcon" svgClasses="w-4 h-4" />
             <span class="ml-2">Load Data</span>
           </li>
