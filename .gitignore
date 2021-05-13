@@ -18,3 +18,5 @@ vuexy-shell-scripts
 .VSCodeCounter/*
 .VSCodeCounter/2020-10-13_08-54-13/
 production/
+push-production.sh
+move-dist.sh
