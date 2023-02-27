@@ -6,3 +6,9 @@ This is part of my master thesis work. I developed a web admin dashboard in orde
 
 ![Rgos Dashboard Login](https://orla.dev/wp-content/uploads/2018/04/Schermata-2021-02-19-alle-14.08.07.png)
 ![Rgos Dashboard Stats](https://orla.dev/wp-content/uploads/2018/04/Schermata-2021-02-19-alle-14.08.46.png)
+
+# Run
+
+```
+npm run serve
+```
